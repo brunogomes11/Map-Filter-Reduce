@@ -1,4 +1,4 @@
-var numbers = [3, 56, 2, 48, 5];
+// var numbers = [3, 56, 2, 48, 5];
 
 //Map -Create a new array by doing something with each item in an array.
 
@@ -62,3 +62,15 @@ var numbers = [3, 56, 2, 48, 5];
 // const newNumber = numbers.findIndex(function (num) {
 //     return num > 10;
 // })
+
+import emojipedia from "./emojipedia";
+
+//Long way function
+// const newEmojipedia = emojipedia.map(function (emojiEntry) {
+//     return emojiEntry.meaning.substring(0, 100)
+// })
+
+//Short way function
+const newEmojipedia = emojipedia.map(emojiEntry => emojiEntry.meaning.substring(0, 100))
+
+console.log(newEmojipedia)
